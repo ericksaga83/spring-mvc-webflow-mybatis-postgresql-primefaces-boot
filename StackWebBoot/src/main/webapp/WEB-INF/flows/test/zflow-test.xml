@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<flow xmlns="http://www.springframework.org/schema/webflow"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/webflow
+        http://www.springframework.org/schema/webflow/spring-webflow-2.0.xsd">
+
+	<view-state id="inicio">
+		<transition on="siguiente" to="segundo" />
+	</view-state>
+	
+	<view-state id="segundo">
+		<transition on="regresar" to="inicio" />
+		
+		<transition on="salir" to="salir" />
+	</view-state>
+	
+	<end-state id="salir" />
+
+</flow>
