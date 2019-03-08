@@ -13,6 +13,15 @@
 	<h:form>
 		<p:panel header="Hola Mundo!!!">
 			<p:outputLabel value="Bienvenido ${name}" />
+			<p:dataTable value="${listado}" var="fila">
+				<p:column headerText="Id">
+					<p:outputLabel value="${fila.id}" />
+				</p:column>
+				
+				<p:column headerText="Nombre">
+					<p:outputLabel value="${fila.nombre}" />
+				</p:column>
+			</p:dataTable>
 		</p:panel>
 	</h:form>
 </h:body>
