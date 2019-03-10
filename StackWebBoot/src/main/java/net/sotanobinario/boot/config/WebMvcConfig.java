@@ -21,7 +21,7 @@ public class WebMvcConfig implements WebMvcConfigurer {
     
     @Bean
     public DispatcherServletRegistrationBean dispatcherServletRegistration() {
-    	DispatcherServletRegistrationBean dispatcherServletRegistration = new DispatcherServletRegistrationBean(dispatcherServlet(), "/ui/");
+    	DispatcherServletRegistrationBean dispatcherServletRegistration = new DispatcherServletRegistrationBean(dispatcherServlet(), "/boot/");
     	dispatcherServletRegistration.setName(DispatcherServletAutoConfiguration.DEFAULT_DISPATCHER_SERVLET_BEAN_NAME);
     	return dispatcherServletRegistration;
     }
