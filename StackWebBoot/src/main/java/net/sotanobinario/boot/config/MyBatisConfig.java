@@ -18,8 +18,8 @@ public class MyBatisConfig {
 		
 		dataSource = new PooledDataSource();
 		dataSource.setDriver("org.postgresql.Driver");
-		dataSource.setUrl("jdbc:postgresql://servidor:puerto/baseDeDatos");
-		dataSource.setUsername("usuario");
+		dataSource.setUrl("jdbc:postgresql://localhost:5432/test");
+		dataSource.setUsername("postgres");
 		dataSource.setPassword("password");
 		
 		return dataSource;
