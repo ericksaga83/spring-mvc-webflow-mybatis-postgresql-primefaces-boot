@@ -11,6 +11,7 @@ Stack para desarrollo de aplicaciones Web.
 - MyBatis
 - PostgreSQL
 - Primefaces
+- Spring Security
 
 URL de la aplicación: http://localhost:8080/boot/
 
